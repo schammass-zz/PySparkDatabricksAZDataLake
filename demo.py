@@ -11,7 +11,7 @@ relative_path = "source"
 adls_path = "abfss://%s@%s.dfs.core.windows.net/%s" % (container_name, account_name, relative_path)
 
 spark.conf.set("fs.azure.account.auth.type.%s.dfs.core.windows.net" %account_name, "SharedKey")
-spark.conf.set("fs.azure.account.key.%s.dfs.core.windows.net" %account_name, "8ZvWXn6C2+e8AuzcVMD5LbR1uR+1B36W2kjquX76a6rTYev5USEXn/yzap7ds2RWSD3cKXNkWO1hJ1k80Lmvxg==")
+spark.conf.set("fs.azure.account.key.%s.dfs.core.windows.net" %account_name, "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
 
 df = spark.read.option('header','true') \
                 .option('delimiter', ',') \
